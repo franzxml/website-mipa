@@ -30,8 +30,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #2f66a8;
-  color: white;
+  background: #FFEB01;
+  color: #1a1a1a;
   padding: 80px 60px;
 }
 
