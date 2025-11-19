@@ -63,17 +63,17 @@ body {
   margin-right: 120px;
 }
 
-.hero-illustration img {
-  width: 360px;
-  display: block;
-  border-radius: 8px;
-}
-
 .image-frame {
   background: white;
   padding: 16px;
   border-radius: 12px;
   display: inline-block;
+}
+
+.hero-illustration img {
+  width: 360px;
+  display: block;
+  border-radius: 8px;
 }
 
 .site-footer {
@@ -82,17 +82,28 @@ body {
   color: #003366;
 }
 
-/* Pembungkus utama agar konten berada di tengah */
 .footer-container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-.footer-columns {
+.footer-columns-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+/* Bagian kiri terdiri dari tiga kolom */
+.footer-left {
   display: flex;
   gap: 80px;
-  margin-bottom: 40px;
+}
+
+/* Bagian kanan hanya satu kolom */
+.footer-right {
+  display: flex;
 }
 
 .footer-col h3 {
