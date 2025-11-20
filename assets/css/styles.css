@@ -4,18 +4,41 @@ body {
   color: #1a1a1a;
 }
 
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 15px 60px; /* Kurangi padding vertikal */
   background: #ffffff;
+  border-bottom: 1px solid #f0f0f0; /* Tambahkan garis tipis di bawah navbar */
+}
+
+.logo .university-name {
+    font-size: 10px;
+    margin: 0;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 900; /* Lebih Bold */
+}
+
+.mipa-icon {
+    font-size: 16px;
+    margin-left: 8px;
+    color: #FFEB01; /* Warna kuning */
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 30px; /* Kurangi jarak */
   margin: 0;
   padding: 0;
 }
@@ -23,62 +46,71 @@ body {
 .navbar a {
   text-decoration: none;
   color: #1a1a1a;
-  font-weight: 600;
+  font-weight: 500; /* Sedikit lebih tipis */
+  transition: color 0.3s ease;
+  padding: 5px 0;
   position: relative;
-  transition: color 0.3s ease; /* Transisi untuk warna teks */
 }
 
-/* Efek Hover pada Navigasi */
+/* Efek Hover Navigasi */
 .navbar a:hover {
-  color: #FFEB01;
+  color: #003366; /* Warna biru gelap */
 }
 
+/* Hero Section Styling */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #FFEB01;
   color: #1a1a1a;
-  padding: 80px 60px;
+  padding: 100px 60px 100px 60px; /* Padding lebih besar */
+  position: relative;
+  overflow: hidden; /* Sembunyikan dekorasi yang melebihi batas */
 }
 
 .hero-text {
   max-width: 500px;
+  z-index: 10;
 }
 
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 56px; /* Lebih besar */
   margin-bottom: 20px;
+  line-height: 1.1;
+  font-weight: 900;
 }
 
 .hero-text p {
-  line-height: 1.6;
+  line-height: 1.8; /* Jarak baris lebih lebar */
   margin-bottom: 30px;
+  color: #333333;
 }
 
 .cta {
   display: inline-block;
-  padding: 14px 26px;
+  padding: 12px 30px; /* Padding lebih besar */
   background: white;
   color: #1a1a1a;
-  border-radius: 8px;
+  border-radius: 4px; /* Sudut lebih tajam */
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease; /* Transisi untuk tombol */
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-/* Efek Hover pada Tombol CTA */
+/* Efek Hover Tombol CTA */
 .cta:hover {
-  background: #1a1a1a;
-  color: #FFEB01;
+  background: #f0f0f0;
+  transform: translateY(-2px);
 }
 
-.cta:active {
-    transform: scale(0.98); /* Efek penekanan tombol */
-}
-
+/* Ilustrasi dan Dekorasi */
 .hero-illustration {
-  margin-right: 120px;
+  margin-right: 0;
+  position: relative;
+  width: 450px;
+  height: 450px;
 }
 
 .image-frame {
@@ -86,153 +118,84 @@ body {
   padding: 16px;
   border-radius: 12px;
   display: inline-block;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Bayangan lebih dramatis */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
 }
 
 .hero-illustration img {
-  width: 360px;
+  width: 300px; /* Ukuran gambar disesuaikan */
   display: block;
   border-radius: 8px;
 }
 
-/* Footer */
-.site-footer {
-  background: #ffffff;
-  padding: 60px 0;
-  color: #003366;
+/* DEKORASI ABSTRAK (Garis dan Lingkaran) */
+.background-decor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* Tambahkan elemen visual abstrak di sini */
 }
 
-.footer-wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+/* Lingkaran Besar di belakang foto */
+.background-decor::before {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: transparent;
+    border: 3px solid #1a1a1a;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
 }
 
-/* kiri layar */
-.footer-left {
-  display: flex;
-  gap: 60px;
-  flex: 1;
+/* Garis-garis diagonal/horizontal */
+.background-decor::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1) 1px,
+        transparent 1px,
+        transparent 10px
+    );
+    opacity: 0.1;
+    transform: rotate(10deg);
 }
 
-/* kanan layar */
-.footer-right {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-}
-
-/* garis tengah */
-.footer-separator {
-  width: 1px;
-  background: #d9d9d9;
-  height: 180px;
-  margin: 0 40px;
-}
-
-.footer-col h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 8px;
-}
-
-.footer-col a {
-  text-decoration: none;
-  color: #003366;
-  transition: color 0.3s ease; /* Transisi untuk tautan footer */
-}
-
-/* Efek Hover pada Tautan Footer */
-.footer-col a:hover {
-  color: #FFEB01;
-}
-
-/* footer bawah di tengah */
-.footer-bottom {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.footer-bottom h2 {
-  font-size: 32px;
-  margin: 0 0 10px;
-}
-
-.footer-bottom p {
-  font-size: 14px;
-  margin: 0;
-}
-
-/*
-Tambahkan responsivitas dasar untuk tampilan seluler (mobile view)
-agar layout tidak pecah pada layar kecil
-*/
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px 30px;
-    }
-
-    .navbar ul {
-        margin-top: 15px;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
+/* Media Query untuk Responsivitas Dasar */
+@media (max-width: 992px) {
     .hero {
         flex-direction: column;
         text-align: center;
         padding: 60px 30px;
     }
+    
+    .hero-text {
+        max-width: 100%;
+    }
 
     .hero-illustration {
         margin: 40px auto 0;
-        margin-right: 0;
+        width: 350px;
+        height: 350px;
     }
 
     .image-frame {
-        padding: 10px;
-    }
-
-    .hero-illustration img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .footer-wrapper {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 30px;
-    }
-
-    .footer-left {
-        flex-direction: column;
-        gap: 30px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-separator {
-        display: none; /* Sembunyikan garis pemisah */
-    }
-
-    .footer-right {
-        justify-content: center;
-        width: 100%;
-        margin-top: 30px;
-        text-align: center;
+        /* Kembali ke posisi relatif untuk mobile */
+        transform: translate(-50%, -50%);
     }
 }
+
+/* Footer styling dihapus karena tidak terlihat di gambar visual */
