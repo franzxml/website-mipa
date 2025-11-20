@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fakultas MIPA UNTAN - Hero Image</title>
+  <title>Fakultas MIPA UNTAN - Masa Depan Sains</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -20,6 +20,7 @@
         <li><a href="#program" class="nav-link">PROGRAM</a></li>
         <li><a href="#akademik" class="nav-link">AKADEMIK</a></li>
         <li><a href="#fasilitas" class="nav-link">FASILITAS</a></li>
+        <li><a href="#kontak" class="nav-link contact-btn">KONTAK</a></li>
       </ul>
     </nav>
   </header>
@@ -28,10 +29,9 @@
     <div class="hero-text">
       <h1>Sains dan Matematika untuk Masa Depan</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dariamod
-        tempor incididunt ut labore et dolore magna aliquam erat volutpat.
+        Mengembangkan potensi sumber daya manusia yang unggul di bidang sains dan teknologi untuk kemajuan peradaban bangsa.
       </p>
-      <a href="#why-mipa-section" class="cta" id="cta-button">Pelajari Lebih Lanjut</a>
+      <a href="#program" class="cta" id="cta-button">Lihat Program Studi</a>
     </div>
 
     <div class="hero-illustration">
@@ -62,33 +62,142 @@
     </div>
   </section>
 
+  <section class="program-section" id="program">
+    <div class="container">
+      <h2 class="section-title">Program Studi</h2>
+      <p class="section-subtitle">Pilihan jurusan terbaik untuk masa depan saintis muda.</p>
+      
+      <div class="program-grid">
+        <div class="program-card">
+          <h3>Matematika</h3>
+          <p>Analisis data, pemodelan matematika, dan komputasi.</p>
+        </div>
+        <div class="program-card">
+          <h3>Fisika</h3>
+          <p>Elektronika, geofisika, dan material maju.</p>
+        </div>
+        <div class="program-card">
+          <h3>Kimia</h3>
+          <p>Kimia organik, lingkungan, dan biokimia.</p>
+        </div>
+        <div class="program-card">
+          <h3>Biologi</h3>
+          <p>Bioteknologi, ekologi, dan konservasi sumber daya alam.</p>
+        </div>
+        <div class="program-card">
+          <h3>Sistem Komputer</h3>
+          <p>Rekayasa perangkat keras dan jaringan komputer.</p>
+        </div>
+        <div class="program-card">
+          <h3>Statistika</h3>
+          <p>Pengolahan data besar dan analisis prediktif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="akademik-section" id="akademik">
+    <div class="container">
+      <div class="akademik-content">
+        <div class="akademik-text">
+          <h2 class="section-title-light">Informasi Akademik</h2>
+          <p>
+            Kami menerapkan kurikulum berbasis <i>Outcome Based Education</i> (OBE) yang dirancang untuk mempersiapkan mahasiswa menghadapi tantangan global. Kegiatan akademik didukung oleh sistem informasi terintegrasi dan perpustakaan digital yang lengkap.
+          </p>
+          <ul class="akademik-list">
+            <li>Kalender Akademik Terstruktur</li>
+            <li>Pertukaran Pelajar Internasional</li>
+            <li>Program Merdeka Belajar Kampus Merdeka (MBKM)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fasilitas-section" id="fasilitas">
+    <div class="container">
+      <h2 class="section-title">Fasilitas Laboratorium</h2>
+      <div class="fasilitas-wrapper">
+        <div class="fasilitas-image">
+          <img src="assets/img/lab-mipa.jpg" alt="Laboratorium MIPA UNTAN">
+        </div>
+        <div class="fasilitas-desc">
+          <h3>Laboratorium Terpadu</h3>
+          <p>
+            Fakultas MIPA UNTAN menyediakan fasilitas laboratorium modern yang dirancang untuk mendukung kegiatan praktikum dan penelitian tingkat lanjut. Ruangan yang luas, pencahayaan yang memadai, serta peralatan standar industri memastikan kenyamanan dan keamanan mahasiswa dalam bereksperimen.
+          </p>
+          <p>
+            Fasilitas ini tersedia bagi seluruh program studi untuk mengembangkan inovasi sains yang relevan dengan kebutuhan industri saat ini.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="kontak">
+    <div class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <div class="contact-wrapper">
+        
+        <div class="contact-info-box">
+          <h3>Informasi Kantor</h3>
+          <p>Universitas Tanjungpura, Pontianak, Kalimantan Barat.</p>
+          <p>Email: info@mipa.untan.ac.id</p>
+          <p>Telepon: (0561) 123456</p>
+          <div class="map-placeholder">
+            <p>[Area Peta Lokasi]</p>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="pesan">Pesan Anda</label>
+              <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pertanyaan atau pesan Anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <div class="section-divider"></div>
 
   <footer class="site-footer">
     <div class="footer-wrapper">
 
       <div class="footer-left">
-        <div class="footer-col" id="program">
+        <div class="footer-col">
           <h3>Tentang</h3>
           <ul>
-            <li><a href="#">Sejarah</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="#tentang">Sejarah</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h3>Program</h3>
           <ul>
-            <li><a href="#">Sarjana</a></li>
-            <li><a href="#">Pascasarjana</a></li>
+            <li><a href="#program">Sarjana</a></li>
+            <li><a href="#program">Pascasarjana</a></li>
           </ul>
         </div>
 
-        <div class="footer-col" id="akademik">
+        <div class="footer-col">
           <h3>Akademik</h3>
           <ul>
-            <li><a href="#">Kalender Akademik</a></li>
-            <li><a href="#">Peraturan</a></li>
+            <li><a href="#akademik">Kalender</a></li>
+            <li><a href="#akademik">Peraturan</a></li>
           </ul>
         </div>
       </div>
@@ -96,11 +205,11 @@
       <div class="footer-separator"></div>
 
       <div class="footer-right">
-        <div class="footer-col contact-info" id="fasilitas">
-          <h3>Kontak</h3>
+        <div class="footer-col contact-info">
+          <h3>Kontak Cepat</h3>
           <ul>
-            <li>Email: info@mipa.untan.ac.id</li>
-            <li>Telepon: (0561) 123456</li>
+            <li>info@mipa.untan.ac.id</li>
+            <li>(0561) 123456</li>
           </ul>
         </div>
       </div>
@@ -109,7 +218,7 @@
 
     <div class="footer-bottom">
       <p class="tagline">Sains dan Matematika untuk Masa Depan</p>
-      <p>© 2023 FAKULTAS MIPA UNIVERSITAS TANJUNGPURA</p>
+      <p>© 2025 FAKULTAS MIPA UNIVERSITAS TANJUNGPURA</p>
     </div>
 
   </footer>
