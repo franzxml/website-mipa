@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fakultas MIPA UNTAN - Estetik Final</title>
+  <title>Fakultas MIPA UNTAN - Smooth Scroll</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,22 +16,22 @@
 
     <nav>
       <ul>
-        <li><a href="#" class="nav-link">TENTANG</a></li>
-        <li><a href="#" class="nav-link">PROGRAM</a></li>
-        <li><a href="#" class="nav-link">AKADEMIK</a></li>
-        <li><a href="#" class="nav-link">FASILITAS</a></li>
+        <li><a href="#tentang" class="nav-link">TENTANG</a></li>
+        <li><a href="#program" class="nav-link">PROGRAM</a></li>
+        <li><a href="#akademik" class="nav-link">AKADEMIK</a></li>
+        <li><a href="#fasilitas" class="nav-link">FASILITAS</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="tentang">
     <div class="hero-text">
       <h1>Sains dan Matematika untuk Masa Depan</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dariamod
         tempor incididunt ut labore et dolore magna aliquam erat volutpat.
       </p>
-      <a href="#" class="cta" id="cta-button">Pelajari Lebih Lanjut</a>
+      <a href="#why-mipa-section" class="cta" id="cta-button">Pelajari Lebih Lanjut</a>
     </div>
 
     <div class="hero-illustration">
@@ -42,7 +42,7 @@
     </div>
   </section>
   
-  <section class="why-mipa">
+  <section class="why-mipa" id="why-mipa-section">
     <div class="container">
         <h2 class="section-title">Mengapa Memilih MIPA UNTAN?</h2>
         <div class="card-wrapper">
@@ -65,12 +65,11 @@
     </div>
   </section>
 
-  <footer class="site-footer">
+  <div class="section-divider"></div> <footer class="site-footer">
     <div class="footer-wrapper">
 
       <div class="footer-left">
-        <div class="footer-col">
-          <h3>Tentang</h3>
+        <div class="footer-col" id="program"> <h3>Tentang</h3>
           <ul>
             <li><a href="#">Sejarah</a></li>
             <li><a href="#">Kontak</a></li>
@@ -85,8 +84,7 @@
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h3>Akademik</h3>
+        <div class="footer-col" id="akademik"> <h3>Akademik</h3>
           <ul>
             <li><a href="#">Kalender Akademik</a></li>
             <li><a href="#">Peraturan</a></li>
@@ -97,8 +95,7 @@
       <div class="footer-separator"></div>
 
       <div class="footer-right">
-        <div class="footer-col contact-info">
-          <h3>Kontak</h3>
+        <div class="footer-col contact-info" id="fasilitas"> <h3>Kontak</h3>
           <ul>
             <li>Email: info@mipa.untan.ac.id</li>
             <li>Telepon: (0561) 123456</li>
@@ -109,7 +106,7 @@
     </div>
 
     <div class="footer-bottom">
-      <h2>Sains dan Matematika untuk Masa Depan</h2>
+      <p class="tagline">Sains dan Matematika untuk Masa Depan</p>
       <p>© 2023 FAKULTAS MIPA UNIVERSITAS TANJUNGPURA</p>
     </div>
 
