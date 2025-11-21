@@ -39,4 +39,4 @@ Website dapat diakses melalui:
 https://website-mipa.vercel.app/
 
 ---
-<p align="justify">@franzxml</p>
+Dikembangkan oleh: @franzxml
