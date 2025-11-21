@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <!-- Meta konfigurasi dasar -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Judul tab browser -->
   <title>Fakultas MIPA UNTAN - Masa Depan Sains</title>
+
+  <!-- Memanggil file CSS utama -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
+  <!-- ======================== NAVBAR ======================== -->
   <header class="navbar" id="mainNavbar">
     <div class="logo-container">
+      <!-- Logo Universitas -->
       <img src="assets/img/logo-untan.png" alt="Logo UNTAN" class="logo-img">
+
+      <!-- Tulisan Universitas + Fakultas -->
       <div class="logo-text">
         <p class="university-name">UNIVERSITAS TANJUNGPURA</p>
-        <h2>FAKULTAS MIPA UNTAN</h2> 
+        <h2>FAKULTAS MIPA UNTAN</h2>
       </div>
     </div>
 
+    <!-- Navigasi utama -->
     <nav>
       <ul>
+        <!-- Setiap item mengarah ke section tertentu -->
         <li><a href="#tentang" class="nav-link">TENTANG</a></li>
         <li><a href="#program" class="nav-link">PROGRAM</a></li>
         <li><a href="#akademik" class="nav-link">AKADEMIK</a></li>
@@ -28,95 +39,129 @@
     </nav>
   </header>
 
+  <!-- ======================== HERO SECTION ======================== -->
   <section class="hero" id="tentang">
+
+    <!-- Wrapper konten text -->
     <div class="hero-content-wrapper">
       <div class="hero-text">
         <h1>Sains dan Matematika untuk Masa Depan</h1>
         <p>
           Mengembangkan potensi sumber daya manusia yang unggul di bidang sains dan teknologi untuk kemajuan peradaban bangsa.
         </p>
+        <!-- Tombol CTA scroll ke program studi -->
         <a href="#program" class="cta" id="cta-button">Lihat Program Studi</a>
       </div>
     </div>
 
+    <!-- Ilustrasi gambar bagian kanan -->
     <div class="hero-illustration-right">
       <img src="assets/img/digital-brain.png" alt="Ilustrasi Jaringan Otak Digital" class="hero-main-image">
     </div>
   </section>
-  
+
+  <!-- ======================== WHY MIPA SECTION ======================== -->
   <section class="why-mipa" id="why-mipa-section">
     <div class="container">
-        <h2 class="section-title">Mengapa Memilih MIPA UNTAN?</h2>
-        <div class="card-wrapper">
-            <div class="mipa-card">
-                <img src="assets/img/riset-icon.webp" alt="Ikon Riset" class="card-icon-img">
-                <h3>Riset Unggulan</h3>
-                <p>Fokus pada penelitian inovatif di bidang sains dasar dan terapan yang berdampak luas.</p>
-            </div>
-            <div class="mipa-card">
-                <img src="assets/img/dosen-icon.avif" alt="Ikon Dosen" class="card-icon-img">
-                <h3>Dosen Kompeten</h3>
-                <p>Didukung oleh staf pengajar berpengalaman dengan kualifikasi pendidikan tinggi internasional.</p>
-            </div>
-            <div class="mipa-card">
-                <img src="assets/img/fasilitas-icon.jpeg" alt="Ikon Fasilitas" class="card-icon-img">
-                <h3>Fasilitas Modern</h3>
-                <p>Laboratorium terakreditasi dan ruang kuliah yang nyaman mendukung proses pembelajaran efektif.</p>
-            </div>
-        </div>
-    </div>
-  </section>
 
-  <section class="program-section" id="program">
-    <div class="container">
-      <h2 class="section-title">Program Studi</h2>
-      <p class="section-subtitle">Pilihan jurusan terbaik untuk masa depan saintis muda.</p>
-      
-      <div class="program-grid">
-        <div class="program-card">
-          <h3>Matematika</h3>
-          <p>Analisis data, pemodelan matematika, dan komputasi.</p>
+      <h2 class="section-title">Mengapa Memilih MIPA UNTAN?</h2>
+
+      <!-- Kumpulan kartu keunggulan fakultas -->
+      <div class="card-wrapper">
+
+        <!-- Kartu 1 -->
+        <div class="mipa-card">
+          <img src="assets/img/riset-icon.webp" alt="Ikon Riset" class="card-icon-img">
+          <h3>Riset Unggulan</h3>
+          <p>Fokus pada penelitian inovatif di bidang sains dasar dan terapan yang berdampak luas.</p>
         </div>
-        <div class="program-card">
-          <h3>Fisika</h3>
-          <p>Elektronika, geofisika, dan material maju.</p>
+
+        <!-- Kartu 2 -->
+        <div class="mipa-card">
+          <img src="assets/img/dosen-icon.avif" alt="Ikon Dosen" class="card-icon-img">
+          <h3>Dosen Kompeten</h3>
+          <p>Didukung oleh staf pengajar berpengalaman dengan kualifikasi pendidikan tinggi internasional.</p>
         </div>
-        <div class="program-card">
-          <h3>Kimia</h3>
-          <p>Kimia organik, lingkungan, dan biokimia.</p>
-        </div>
-        <div class="program-card">
-          <h3>Biologi</h3>
-          <p>Bioteknologi, ekologi, dan konservasi sumber daya alam.</p>
-        </div>
-        <div class="program-card">
-          <h3>Sistem Komputer</h3>
-          <p>Rekayasa perangkat keras dan jaringan komputer.</p>
-        </div>
-        <div class="program-card">
-          <h3>Statistika</h3>
-          <p>Pengolahan <i>Big Data</i> dan analisis prediktif.</p>
-        </div>
-        <div class="program-card">
-          <h3>Sistem Informasi</h3>
-          <p>Pengembangan <i>Software Engineering</i>, manajemen basis data, dan analisis sistem.</p>
-        </div>
-        <div class="program-card">
-          <h3>Ilmu Kelautan</h3>
-          <p>Studi <i>Oceanography</i>, biologi laut, dan eksplorasi sumber daya maritim.</p>
+
+        <!-- Kartu 3 -->
+        <div class="mipa-card">
+          <img src="assets/img/fasilitas-icon.jpeg" alt="Ikon Fasilitas" class="card-icon-img">
+          <h3>Fasilitas Modern</h3>
+          <p>Laboratorium terakreditasi dan ruang kuliah yang nyaman mendukung proses pembelajaran efektif.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ======================== PROGRAM STUDI ======================== -->
+  <section class="program-section" id="program">
+    <div class="container">
+
+      <h2 class="section-title">Program Studi</h2>
+      <p class="section-subtitle">Pilihan jurusan terbaik untuk masa depan saintis muda.</p>
+
+      <!-- Grid daftar program studi -->
+      <div class="program-grid">
+
+        <!-- Setiap program dalam bentuk kartu sederhana -->
+        <div class="program-card">
+          <h3>Matematika</h3>
+          <p>Analisis data, pemodelan matematika, dan komputasi.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Fisika</h3>
+          <p>Elektronika, geofisika, dan material maju.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Kimia</h3>
+          <p>Kimia organik, lingkungan, dan biokimia.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Biologi</h3>
+          <p>Bioteknologi, ekologi, dan konservasi sumber daya alam.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Sistem Komputer</h3>
+          <p>Rekayasa perangkat keras dan jaringan komputer.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Statistika</h3>
+          <p>Pengolahan <i>Big Data</i> dan analisis prediktif.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Sistem Informasi</h3>
+          <p>Pengembangan <i>Software Engineering</i>, manajemen basis data, dan analisis sistem.</p>
+        </div>
+
+        <div class="program-card">
+          <h3>Ilmu Kelautan</h3>
+          <p>Studi <i>Oceanography</i>, biologi laut, dan eksplorasi sumber daya maritim.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== AKADEMIK ======================== -->
   <section class="akademik-section" id="akademik">
     <div class="container">
       <div class="akademik-content">
         <div class="akademik-text">
+
           <h2 class="section-title-light">Informasi Akademik</h2>
+
+          <!-- Penjelasan akademik -->
           <p>
             Kami menerapkan kurikulum berbasis <i>Outcome Based Education</i> (OBE) yang dirancang untuk mempersiapkan mahasiswa menghadapi tantangan global. Kegiatan akademik didukung oleh sistem informasi terintegrasi dan perpustakaan digital yang lengkap.
           </p>
+
+          <!-- Daftar fasilitas akademik -->
           <ul class="akademik-list">
             <li>Kalender Akademik Terstruktur</li>
             <li>Pertukaran Pelajar Internasional</li>
@@ -127,13 +172,20 @@
     </div>
   </section>
 
+  <!-- ======================== FASILITAS ======================== -->
   <section class="fasilitas-section" id="fasilitas">
     <div class="container">
+
       <h2 class="section-title">Fasilitas Laboratorium</h2>
+
       <div class="fasilitas-wrapper">
+
+        <!-- Gambar fasilitas -->
         <div class="fasilitas-image">
           <img src="assets/img/lab-mipa.jpg" alt="Laboratorium MIPA UNTAN">
         </div>
+
+        <!-- Deskripsi fasilitas -->
         <div class="fasilitas-desc">
           <h3>Laboratorium Terpadu</h3>
           <p>
@@ -143,48 +195,55 @@
             Fasilitas ini tersedia bagi seluruh program studi untuk mengembangkan inovasi sains yang relevan dengan kebutuhan industri saat ini.
           </p>
         </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ======================== KONTAK ======================== -->
   <section class="contact-section" id="kontak">
     <div class="container">
+
       <h2 class="section-title">Hubungi Kami</h2>
+
       <div class="contact-wrapper">
-        
+
+        <!-- Informasi kontak dan peta -->
         <div class="contact-info-box">
           <h3>Informasi Kantor</h3>
           <p>Universitas Tanjungpura, Pontianak, Kalimantan Barat.</p>
           <p>Email: info@mipa.untan.ac.id</p>
           <p>Telepon: (0561) 123456</p>
-          
+
+          <!-- Embed Google Map -->
           <div class="map-container">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817951632094!2d109.3443363749646!3d-0.06057599993881892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d599bd2016899%3A0x772d34d78648946d!2sUniversitas%20Tanjungpura!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817951632094!2d109.3443363749646!3d-0.06057599993881892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d599bd2016899%3A0x772d34d78648946d!2sUniversitas%20Tanjungpura!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
           </div>
         </div>
 
+        <!-- Form kontak -->
         <div class="contact-form-box">
           <form id="contactForm">
+
+            <!-- Input nama -->
             <div class="form-group">
               <label for="nama">Nama Lengkap</label>
               <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
             </div>
+
+            <!-- Input email -->
             <div class="form-group">
               <label for="email">Alamat Email</label>
               <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
             </div>
+
+            <!-- Input pesan -->
             <div class="form-group">
               <label for="pesan">Pesan Anda</label>
               <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pertanyaan atau pesan Anda di sini..." required></textarea>
             </div>
+
+            <!-- Tombol kirim -->
             <button type="submit" class="submit-btn">Kirim Pesan</button>
           </form>
         </div>
@@ -193,12 +252,13 @@
     </div>
   </section>
 
-  <div class="section-divider"></div>
-
+  <!-- ======================== FOOTER ======================== -->
   <footer class="site-footer">
     <div class="footer-wrapper">
 
+      <!-- Kolom navigasi footer kiri -->
       <div class="footer-left">
+
         <div class="footer-col">
           <h3>Tentang</h3>
           <ul>
@@ -222,10 +282,13 @@
             <li><a href="#akademik">Peraturan</a></li>
           </ul>
         </div>
+
       </div>
 
+      <!-- Pemisah kolom -->
       <div class="footer-separator"></div>
 
+      <!-- Kolom kanan -->
       <div class="footer-right">
         <div class="footer-col contact-info">
           <h3>Kontak Cepat</h3>
@@ -233,18 +296,4 @@
             <li>info@mipa.untan.ac.id</li>
             <li>(0561) 123456</li>
           </ul>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p class="tagline">Sains dan Matematika untuk Masa Depan</p>
-      <p>© 2025 FAKULTAS MIPA UNIVERSITAS TANJUNGPURA</p>
-    </div>
-
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+        </
